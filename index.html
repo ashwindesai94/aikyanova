@@ -71,16 +71,32 @@
 </article>
 </div>
 
+<h2>Collaboration programs</h2>
+<p class="lead">We co-create with a global network of clinicians, academic labs, and technology alliances to validate our platforms and accelerate responsible deployment.</p>
+
+<div class="partner-grid">
+<article class="partner-card">
+<h3>Clinical collaborators</h3>
+<p>Embed pilots within care pathways to stress-test usability, safety, and patient outcomes.</p>
+<ul class="tag-list"><li>Hospital innovation units</li><li>Specialty care centers</li><li>Community health programs</li></ul>
+</article>
+<article class="partner-card">
+<h3>Academic ecosystems</h3>
+<p>Translate frontier discoveries through shared labs, fellowships, and translational grants.</p>
+<ul class="tag-list"><li>Systems biology consortia</li><li>Bioengineering institutes</li><li>AI for health labs</li></ul>
+</article>
+<article class="partner-card">
+<h3>Technology alliances</h3>
+<p>Integrate sensing, compute, and manufacturing partners to deliver scalable solutions.</p>
+<ul class="tag-list"><li>Medtech OEMs</li><li>Cloud and data platforms</li><li>Advanced fabrication studios</li></ul>
+</article>
+</div>
+
 <p>We collaborate with healthcare providers, academic centers, and industry partners to deploy pilot programs that validate our technologies against real‑world clinical workflows. Every solution is designed to scale responsibly while maintaining safety, compliance, and equitable access.</p>
 </div>
-<div class="footer">© <span id="y"></span> AikyaNova Pvt. Ltd. · <a href="mailto:aikyanova@gmail.com">aikyanova@gmail.com</a></div>
+<div class="footer">© <span data-year></span> AikyaNova Pvt. Ltd. · <a href="mailto:aikyanova@gmail.com">aikyanova@gmail.com</a></div>
 </div>
 </div>
-<script>
-// highlight active nav
-const here = location.pathname.split('/').pop()||'index.html';
-document.querySelectorAll('nav a').forEach(a=>{ if(a.getAttribute('href')===here) a.classList.add('active'); });
-document.getElementById('y').textContent=new Date().getFullYear();
-</script>
+<script src="site.js"></script>
 </body>
 </html>

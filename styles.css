@@ -85,6 +85,17 @@ a{color:var(--link)}
 .stat strong{display:block;font-size:28px;font-weight:600;color:#fff}
 .stat span{color:#9fb4db;font-size:14px;letter-spacing:.3px;text-transform:uppercase}
 
+/* Collaboration grid */
+.partner-grid{margin:34px 0 12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.partner-card{position:relative;padding:24px;border-radius:20px;background:rgba(17,24,39,.82);border:1px solid rgba(99,102,241,.25);box-shadow:0 16px 34px rgba(8,14,29,.4);overflow:hidden;transition:transform .25s ease, border-color .25s ease}
+.partner-card::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(135deg, rgba(34,211,238,.45), rgba(99,102,241,.55), rgba(250,204,21,.35));-webkit-mask:linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.75;pointer-events:none;transition:opacity .25s ease}
+.partner-card h3{margin:0 0 10px;font-size:20px;color:#fff;font-weight:600}
+.partner-card p{margin:0 0 14px;color:#c4d2f6;min-height:72px}
+.partner-card .tag-list{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.partner-card .tag-list li{padding:6px 12px;border-radius:999px;background:rgba(99,102,241,.22);color:#dbe2ff;font-size:13px;font-weight:600;letter-spacing:.3px;text-transform:uppercase}
+.partner-card:hover{transform:translateY(-6px);border-color:rgba(250,204,21,.75)}
+.partner-card:hover::before{opacity:1}
+
 /* Responsive */
 @media (max-width:640px){
   nav{padding:12px 18px}
