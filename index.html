@@ -6,6 +6,8 @@
 <title>AikyaNova — Home</title>
 <meta name="description" content="AikyaNova is a deep‑tech company innovating at the intersection of biology, engineering and intelligence." />
 <link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
 </head>
 <body>
 <div class="container">
@@ -31,6 +33,19 @@
 <a href="contact.html">Contact</a>
 </nav>
 <div class="main">
+<section class="hero">
+<div class="logo-wrap"><img class="logo" src="logo_2.png" alt="AikyaNova logo animated"></div>
+<div>
+<h2>Deep‑tech at the intersection of biology, engineering, and intelligence</h2>
+<p class="lead">Research → Prototypes → Translation. We turn convergence into biomedical impact.</p>
+<div class="cta">
+<a class="button" href="about.html">Learn more</a>
+<a class="button secondary" href="contact.html">Contact</a>
+</div>
+</div>
+</section>
+
+
 <h2>Welcome</h2>
 <p class="lead">AikyaNova is a deep‑tech company focused on the research, development, and commercialization of synergistic technologies to address pressing biomedical challenges.</p>
 <p>We work at the intersection of biology, engineering, sensing systems, nanotechnology, and AI to translate research into real‑world healthcare solutions.</p>
@@ -38,6 +53,11 @@
 <div class="footer">© <span id="y"></span> AikyaNova Pvt. Ltd. · <a href="mailto:aikyanova@gmail.com">aikyanova@gmail.com</a></div>
 </div>
 </div>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script>
+// highlight active nav
+const here = location.pathname.split('/').pop()||'index.html';
+document.querySelectorAll('nav a').forEach(a=>{ if(a.getAttribute('href')===here) a.classList.add('active'); });
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
